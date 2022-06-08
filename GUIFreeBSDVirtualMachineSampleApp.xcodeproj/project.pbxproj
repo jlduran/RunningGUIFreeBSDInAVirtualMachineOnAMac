@@ -18,11 +18,11 @@
 		62A7A2B81952CC2F11BFE9A2 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		8F0313B127CB143B00360D7E /* Virtualization.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Virtualization.framework; path = System/Library/Frameworks/Virtualization.framework; sourceTree = SDKROOT; };
 		8FDC7765280E2517002AA4ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FF8298927500C060037FA83 /* GUILinuxVirtualMachineSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUILinuxVirtualMachineSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF8298927500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUIFreeBSDVirtualMachineSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF8298C27500C060037FA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FF8298E27500C070037FA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FF8299127500C070037FA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8FF8299327500C070037FA83 /* GUILinuxVirtualMachineSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GUILinuxVirtualMachineSampleApp.entitlements; sourceTree = "<group>"; };
+		8FF8299327500C070037FA83 /* GUIFreeBSDVirtualMachineSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GUIFreeBSDVirtualMachineSampleApp.entitlements; sourceTree = "<group>"; };
 		E489E24B87B74AAC6D64B249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				E489E24B87B74AAC6D64B249 /* README.md */,
-				8FF8298B27500C060037FA83 /* GUILinuxVirtualMachineSampleApp */,
+				8FF8298B27500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp */,
 				8FF8298A27500C060037FA83 /* Products */,
 				8FF82999275040C80037FA83 /* Frameworks */,
 				7C99BD11C87A466A17F398E6 /* Configuration */,
@@ -61,21 +61,21 @@
 		8FF8298A27500C060037FA83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FF8298927500C060037FA83 /* GUILinuxVirtualMachineSampleApp.app */,
+				8FF8298927500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FF8298B27500C060037FA83 /* GUILinuxVirtualMachineSampleApp */ = {
+		8FF8298B27500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp */ = {
 			isa = PBXGroup;
 			children = (
 				8FDC7765280E2517002AA4ED /* Info.plist */,
 				8FF8298C27500C060037FA83 /* AppDelegate.swift */,
 				8FF8298E27500C070037FA83 /* Assets.xcassets */,
 				8FF8299027500C070037FA83 /* MainMenu.xib */,
-				8FF8299327500C070037FA83 /* GUILinuxVirtualMachineSampleApp.entitlements */,
+				8FF8299327500C070037FA83 /* GUIFreeBSDVirtualMachineSampleApp.entitlements */,
 			);
-			path = GUILinuxVirtualMachineSampleApp;
+			path = GUIFreeBSDVirtualMachineSampleApp;
 			sourceTree = "<group>";
 		};
 		8FF82999275040C80037FA83 /* Frameworks */ = {
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FF8298827500C060037FA83 /* GUILinuxVirtualMachineSampleApp */ = {
+		8FF8298827500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FF8299627500C070037FA83 /* Build configuration list for PBXNativeTarget "GUILinuxVirtualMachineSampleApp" */;
+			buildConfigurationList = 8FF8299627500C070037FA83 /* Build configuration list for PBXNativeTarget "GUIFreeBSDVirtualMachineSampleApp" */;
 			buildPhases = (
 				8FF8298527500C060037FA83 /* Sources */,
 				8FF8298627500C060037FA83 /* Frameworks */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = GUILinuxVirtualMachineSampleApp;
-			productName = GUILinuxVirtualMachineSampleApp;
-			productReference = 8FF8298927500C060037FA83 /* GUILinuxVirtualMachineSampleApp.app */;
+			name = GUIFreeBSDVirtualMachineSampleApp;
+			productName = GUIFreeBSDVirtualMachineSampleApp;
+			productReference = 8FF8298927500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8FF8298427500C060037FA83 /* Build configuration list for PBXProject "GUILinuxVirtualMachineSampleApp" */;
+			buildConfigurationList = 8FF8298427500C060037FA83 /* Build configuration list for PBXProject "GUIFreeBSDVirtualMachineSampleApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FF8298827500C060037FA83 /* GUILinuxVirtualMachineSampleApp */,
+				8FF8298827500C060037FA83 /* GUIFreeBSDVirtualMachineSampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -218,7 +218,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = GUILinuxVirtualMachineSampleApp/GUILinuxVirtualMachineSampleApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GUIFreeBSDVirtualMachineSampleApp/GUIFreeBSDVirtualMachineSampleApp.entitlements;
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
@@ -285,7 +285,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = GUILinuxVirtualMachineSampleApp/GUILinuxVirtualMachineSampleApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = GUIFreeBSDVirtualMachineSampleApp/GUIFreeBSDVirtualMachineSampleApp.entitlements;
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
@@ -317,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/GUILinuxVirtualMachineSampleApp/GUILinuxVirtualMachineSampleApp.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/GUIFreeBSDVirtualMachineSampleApp/GUIFreeBSDVirtualMachineSampleApp.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,7 +327,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/GUILinuxVirtualMachineSampleApp/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/GUIFreeBSDVirtualMachineSampleApp/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -337,7 +337,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GUILinuxVirtualMachineSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GUIFreeBSDVirtualMachineSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -352,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/GUILinuxVirtualMachineSampleApp/GUILinuxVirtualMachineSampleApp.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "$(PROJECT_DIR)/GUIFreeBSDVirtualMachineSampleApp/GUIFreeBSDVirtualMachineSampleApp.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,7 +362,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/GUILinuxVirtualMachineSampleApp/Info.plist";
+				INFOPLIST_FILE = "$(PROJECT_DIR)/GUIFreeBSDVirtualMachineSampleApp/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -372,7 +372,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GUILinuxVirtualMachineSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GUIFreeBSDVirtualMachineSampleApp${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -384,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FF8298427500C060037FA83 /* Build configuration list for PBXProject "GUILinuxVirtualMachineSampleApp" */ = {
+		8FF8298427500C060037FA83 /* Build configuration list for PBXProject "GUIFreeBSDVirtualMachineSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FF8299427500C070037FA83 /* Debug */,
@@ -393,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FF8299627500C070037FA83 /* Build configuration list for PBXNativeTarget "GUILinuxVirtualMachineSampleApp" */ = {
+		8FF8299627500C070037FA83 /* Build configuration list for PBXNativeTarget "GUIFreeBSDVirtualMachineSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FF8299727500C070037FA83 /* Debug */,
