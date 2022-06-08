@@ -7,7 +7,7 @@ The app delegate that sets up and starts the virtual machine.
 
 import Virtualization
 
-let vmBundlePath = NSHomeDirectory() + "/GUI Linux VM.bundle/"
+let vmBundlePath = NSHomeDirectory() + "/GUI FreeBSD VM.bundle/"
 let mainDiskImagePath = vmBundlePath + "Disk.img"
 let efiVariableStorePath = vmBundlePath + "NVRAM"
 let machineIdentifierPath = vmBundlePath + "MachineIdentifier"
@@ -33,7 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, VZVirtualMachineDelegate {
         do {
             try FileManager.default.createDirectory(atPath: vmBundlePath, withIntermediateDirectories: false)
         } catch {
-            fatalError("Failed to create “GUI Linux VM.bundle.”")
+            fatalError("Failed to create “GUI FreeBSD VM.bundle.”")
         }
     }
 
@@ -246,10 +246,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, VZVirtualMachineDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         NSApp.activate(ignoringOtherApps: true)
 
-        // If "GUI Linux VM.bundle" doesn't exist, the sample app tries to create
-        // one and install Linux onto an empty disk image from the ISO image,
+        // If "GUI FreeBSD VM.bundle" doesn't exist, the sample app tries to create
+        // one and install FreeBSD onto an empty disk image from the ISO image,
         // otherwise, it tries to directly boot from the disk image inside
-        // the "GUI Linux VM.bundle".
+        // the "GUI FreeBSD VM.bundle".
         if !FileManager.default.fileExists(atPath: vmBundlePath) {
             needsInstall = true
             createVMBundle()
