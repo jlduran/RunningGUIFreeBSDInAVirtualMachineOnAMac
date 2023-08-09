@@ -22,10 +22,10 @@ Before you run the sample program, you need to download an ISO installation imag
 - [FreeBSD](https://www.freebsd.org/where/)
 
 
-> **Warning** \
+> [!WARNING]
 > The Virtualization framework can run FreeBSD VMs on a Mac with Apple silicon, and on an Intel-based Mac. The FreeBSD ISO image you download must support the CPU architecture of your Mac. For a Mac with Apple silicon, download a FreeBSD ISO image for ARM, which is indicated by `aarch64` in the image filename. For an Intel-based Mac, download a FreeBSD ISO image for Intel-compatible CPUs, which is indicated by `amd64` in the image filename.
 
-> **Note** \
+> [!NOTE]
 > If you need to run Intel FreeBSD binaries in ARM FreeBSD on a Mac with Apple silicon, the Virtualization framework supports this capability using the Rosetta translation environment. For more information, see [Running Intel Binaries in Linux VMs with Rosetta](https://developer.apple.com/documentation/virtualization/running_intel_binaries_in_linux_vms_with_rosetta).
 
 
@@ -130,7 +130,7 @@ private func createSpiceAgentConsoleDeviceConfiguration() -> VZVirtioConsoleDevi
 }
 ```
 
-> **Warning** \
+> [!WARNING]
 > To use the copy-and-paste capability in FreeBSD, the user needs to install the spice-gtk package, which is available through the FreeBSD package manager. Developers need to communicate this requirement to users of their apps.
 
 
