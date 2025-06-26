@@ -1,5 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 The app delegate that sets up and starts the virtual machine.
@@ -230,6 +230,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, VZVirtualMachineDelegate {
         DispatchQueue.main.async {
             self.createVirtualMachine()
             self.virtualMachineView.virtualMachine = self.virtualMachine
+
+            if #available(macOS 14.0, *) {
+                // Configure the app to automatically respond changes in the display size.
+                self.virtualMachineView.automaticallyReconfiguresDisplay = true
+            }
+
             self.virtualMachine.delegate = self
             self.virtualMachine.start(completionHandler: { (result) in
                 switch result {
