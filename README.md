@@ -22,7 +22,7 @@ Before you run the sample program, you need to download an ISO installation imag
 - [FreeBSD](https://www.freebsd.org/where/)
 
 
-> [!WARNING]
+> [!IMPORTANT]
 > The Virtualization framework can run FreeBSD VMs on a Mac with Apple silicon, and on an Intel-based Mac. The FreeBSD ISO image you download must support the CPU architecture of your Mac. For a Mac with Apple silicon, download a FreeBSD ISO image for ARM, which is indicated by `aarch64` in the image filename. For an Intel-based Mac, download a FreeBSD ISO image for Intel-compatible CPUs, which is indicated by `amd64` in the image filename.
 
 > [!NOTE]
@@ -30,6 +30,9 @@ Before you run the sample program, you need to download an ISO installation imag
 
 
 ## Configure the sample code project
+
+> [!NOTE]
+> The default deployment target is macOS14, if you need to build for a different version of macOS you'll need to change the deployment target as appropriate.
 
 1. Launch Xcode and open `GUIFreeBSDVirtualMachineSampleApp.xcodeproj`.
 
@@ -130,7 +133,7 @@ private func createSpiceAgentConsoleDeviceConfiguration() -> VZVirtioConsoleDevi
 }
 ```
 
-> [!WARNING]
+> [!IMPORTANT]
 > To use the copy-and-paste capability in FreeBSD, the user needs to install the spice-gtk package, which is available through the FreeBSD package manager. Developers need to communicate this requirement to users of their apps.
 
 
@@ -142,6 +145,12 @@ Before calling the VM's [`start`][method_start] method, the sample app configure
 
 ``` swift
 self.virtualMachineView.virtualMachine = self.virtualMachine
+
+if #available(macOS 14.0, *) {
+    // Configure the app to automatically respond changes in the display size.
+    self.virtualMachineView.automaticallyReconfiguresDisplay = true
+}
+
 self.virtualMachine.delegate = self
 self.virtualMachine.start(completionHandler: { (result) in
     switch result {
@@ -153,3 +162,5 @@ self.virtualMachine.start(completionHandler: { (result) in
     }
 })
 ```
+
+The app sets the display to automatically resize when the window size changes.
