@@ -123,11 +123,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, VZVirtualMachineDelegate {
     }
 
     private func createUSBMassStorageDeviceConfiguration() -> VZUSBMassStorageDeviceConfiguration {
-        guard let intallerDiskAttachment = try? VZDiskImageStorageDeviceAttachment(url: installerISOPath!, readOnly: true) else {
+        guard let installerDiskAttachment = try? VZDiskImageStorageDeviceAttachment(url: installerISOPath!, readOnly: true) else {
             fatalError("Failed to create installer's disk attachment.")
         }
 
-        return VZUSBMassStorageDeviceConfiguration(attachment: intallerDiskAttachment)
+        return VZUSBMassStorageDeviceConfiguration(attachment: installerDiskAttachment)
     }
 
     private func createNetworkDeviceConfiguration() -> VZVirtioNetworkDeviceConfiguration {
@@ -298,6 +298,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, VZVirtualMachineDelegate {
     }
 
     func virtualMachine(_ virtualMachine: VZVirtualMachine, networkDevice: VZNetworkDevice, attachmentWasDisconnectedWithError error: Error) {
-        print("Netowrk attachment was disconnected with error: \(error.localizedDescription)")
+        print("Network attachment was disconnected with error: \(error.localizedDescription)")
     }
 }

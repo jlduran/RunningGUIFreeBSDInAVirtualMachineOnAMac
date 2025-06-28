@@ -59,11 +59,11 @@ The sample app configures a `VZDiskImageStorageDeviceAttachment` object with the
 
 ``` swift
 private func createUSBMassStorageDeviceConfiguration() -> VZUSBMassStorageDeviceConfiguration {
-    guard let intallerDiskAttachment = try? VZDiskImageStorageDeviceAttachment(url: installerISOPath!, readOnly: true) else {
+    guard let installerDiskAttachment = try? VZDiskImageStorageDeviceAttachment(url: installerISOPath!, readOnly: true) else {
         fatalError("Failed to create installer's disk attachment.")
     }
 
-    return VZUSBMassStorageDeviceConfiguration(attachment: intallerDiskAttachment)
+    return VZUSBMassStorageDeviceConfiguration(attachment: installerDiskAttachment)
 }
 ```
 
